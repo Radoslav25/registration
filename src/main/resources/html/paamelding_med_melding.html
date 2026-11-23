@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <link href="css/simple.css" rel="stylesheet" type="text/css" />
+    <script src="js/myscript.js" defer></script>
+    <title>Påmelding</title>
+</head>
+
+<body>
+    <h2>Påmelding</h2>
+    <p style="color:red;">Påmeldingsdetaljer er ugyldige</p>
+
+    <!-- Jeg har fjernet alt som har med form og input å gjøre,
+         siden dette er pensum. Her får dere sette opp skjemaet
+         selv. Lykke til.
+    -->
+      <form name="registrationForm" action="registrasjon" method="post" onsubmit="return validateForm()">
+        <label>First Name: <input type="text" name="fornavn" required /></label><br>
+        <label>Last Name: <input type="text" name="etternavn" required /></label><br>
+        <label>Phone Number: <input type="tel" name="tel" required /></label><br>
+        <label>Password: <input type="password" name="passord" required /></label><br>
+        <label>Repeat Password: <input type="password" name="repetertPassord" required /></label><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
